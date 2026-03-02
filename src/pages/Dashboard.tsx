@@ -17,7 +17,6 @@ import {
   EventAvailable,
 } from '@mui/icons-material';
 import { Layout } from '../components/layout/Layout';
-import { useTheme } from '../contexts/ThemeContext';
 
 const stats = [
   {
@@ -64,34 +63,6 @@ const recentActivities = [
   { action: 'Zmieniono status pracownika', user: 'Admin', time: '3 dni temu' },
 ];
 
-// Dane do wykresu - Budżet po departamentach
-const budgetData = [
-  { name: 'IT & Dev', value: 320000, percentage: 37.8 },
-  { name: 'Sales & Marketing', value: 210000, percentage: 24.8 },
-  { name: 'Design & UX', value: 175000, percentage: 20.7 },
-  { name: 'HR & Admin', value: 142500, percentage: 16.8 },
-];
-
-// Dane do wykresu - Pracownicy po departamentach
-const employeeData = [
-  { name: 'IT & Dev', employees: 8 },
-  { name: 'Sales & Marketing', employees: 6 },
-  { name: 'Design & UX', employees: 5 },
-  { name: 'HR & Admin', employees: 5 },
-];
-
-// Dane do wykresu - Statystyki miesiączne
-const monthlyData = [
-  { month: 'Sty', salary: 205000, bonuses: 12000, costs: 217000 },
-  { month: 'Lut', salary: 215000, bonuses: 15000, costs: 230000 },
-  { month: 'Mar', salary: 220000, bonuses: 18000, costs: 238000 },
-  { month: 'Kwi', salary: 225000, bonuses: 20000, costs: 245000 },
-  { month: 'Maj', salary: 230000, bonuses: 22000, costs: 252000 },
-  { month: 'Cze', salary: 235000, bonuses: 25000, costs: 260000 },
-];
-
-// Kolory dla pie chart
-const COLORS = ['#667eea', '#764ba2', '#8b5cf6', '#f59e0b'];
 
 export const Dashboard: React.FC = () => {
   return (
